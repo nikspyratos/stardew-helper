@@ -1,0 +1,12 @@
+#welcome {
+    scroll-margin-top: 100px;
+}
+
+.to-top {
+  opacity: 1;
+  display: inline-block;
+  padding: 1em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
