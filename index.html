@@ -2,42 +2,61 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <title>Nik's Stardew Valley Helper</title>
+    <title>Stardew Valley Helper</title>
+
+    <style>
+        body {
+            background-image:url('/sdv_night.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            max-width: 1000px;
+        }
+
+        main {
+            background: rgba(32, 43, 56, 0.9);
+            border-radius: 25px;
+            padding: 30px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .to-top {
+          opacity: 1;
+          display: inline-block;
+          position: fixed;
+          bottom: 1em;
+          right: 1em;
+        }
+    </style>
 </head>
 <body>
-    <nav class="border fixed split-nav">
-        <div class="nav-brand">
+    <main>
+        <div>
             <img style="display:inline" src="favicon-32x32.png" alt="Stardew Valley Island Trader icon">
             <h3 style="display:inline">
                 Nik's Stardew Valley Reference Guide
             </h3>
-        </div>
-
-        <div class="collapsible">
-            <input id="collapsible1" type="checkbox" name="collapsible1">
-            <label for="collapsible1">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </label>
-            <div class="collapsible-body">
-              <ul class="inline">
-                <li><a href="https://github.com/nikspyratos/stardew-helper" target="_blank">Github</a></li>
-                <li><a href="https://www.nik.software" target="_blank">Nik.Software</a></li>
-              </ul>
+            <div>
+                <ul>
+                    <li><a href="https://github.com/nikspyratos/stardew-helper" target="_blank">Github</a></li>
+                    <li><a href="https://www.nik.software" target="_blank">Nik.Software</a></li>
+                </ul>
             </div>
         </div>
-    </nav>
-    <main class="paper container container-lg">
         <h1 id="welcome">Welcome!</h1>
         <p>I love that the <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank">wiki</a> is so fully detailed, but I got tired of navigating through it constantly to find the info I need.</p>
         <p>This page intends to be a gameplay reference guide for the data you'd most often need - NPC schedules, crop details, fish times, building costs, golden walnut locations, etc.</p>
-        <p>Built using <a href="https://www.getpapercss.com/">Paper CSS</a>.</p>
+        <p>No fancy search required, just use your browser's page searching functionality.</p>
+        <p>To keep this page light, images of various items are not included.</p>
+        <p>Built using <a href="https://watercss.kognise.dev/">Water.css</a>.</p>
         <h2 id="toc">Table of Contents</h2>
         <!--    TOC    -->
         <h2 id="skills">Skills</h2>
@@ -47,11 +66,502 @@
             <h3 id="fishing">Fishing</h3>
             <h3 id="combat">Combat</h3>
             <h3 id="mastery">Mastery</h3>
-        <h2 id="buildings">Farm Buildings</h2>
+        <div>
+            <h2 id="buildings">Farm Buildings</h2>
             <h3 id="carpenter">Carpenter's Shop</h3>
+            <h4>House Upgrades</h4>
+            <p>When upgrading the Farmhouse, the footprint of the building does not change, so no adjacent tiles are impacted. House upgrades add space inside the house as well as accessibility to the kitchen for cooking.</p>
+            <p>Farmhouse upgrades require three days to complete. </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>House Upgrade 1</td>
+                        <td colspan="2">
+                            Increase house size and adds a Kitchen.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>10,000g</li>
+                                <li>450 Wood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>House Upgrade 2</td>
+                        <td colspan="2">
+                            <p>Adds two new rooms, one empty, and one with a crib and two single beds. This allows you to have two children. Both the kitchen and the bedroom are larger.</p>
+                            <p>Unlocks renovations and building/trim painting.</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>65,000g</li>
+                                <li>100 Hardwood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>House Upgrade 3</td>
+                        <td colspan="2">
+                            <p>Adds a cellar under the house, allowing access via the kitchen.</p>
+                            <p>The cellar allows the player to craft and house Casks which can age specific products (i.e., Cheese, Goat Cheese, Beer, Mead, Pale Ale, and Wine) to increase their quality and value.</p>
+                            <p>The exterior appearance of the house remains identical.</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>100,000g</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>House Renovations</h4>
+            <p>House renovations allow the player to add or remove certain features from their house. All the renovation options are done instantly and can be reversed. House renovations are unlocked after the second farmhouse upgrade. </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Remove Crib</td>
+                        <td colspan="2">
+                            Remove the crib from your home.
+                        </td>
+                        <td>
+                            Free
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Open Bedroom</td>
+                        <td colspan="2">
+                            Removes the wall separating your bedroom and the entrance room. Adds a total of 12 spaces.
+                        </td>
+                        <td>
+                            10,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add Southern Room </td>
+                        <td colspan="2">
+                            Adds a 11x7 room to the south of your bedroom.
+                        </td>
+                        <td>
+                            30,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add Corner Room </td>
+                        <td colspan="2">
+                            Adds a 9x5 room in the northeast corner of the house.
+                        </td>
+                        <td>
+                            20,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add Dining Room </td>
+                        <td colspan="2">
+                            Adds a large (9×10 + 4×5) room to the left of the kitchen.
+                        </td>
+                        <td>
+                            150,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add Cubby </td>
+                        <td colspan="2">
+                            Adds a little 4x5 cubby next to the front door.
+                        </td>
+                        <td>
+                            10,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add Attic </td>
+                        <td colspan="2">
+                            Adds another staircase up, and a 13x5 room at the top.
+                        </td>
+                        <td>
+                            10,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Expand Corner Room </td>
+                        <td colspan="2">
+                            Extends the corner room to 8×13 + 4×5, adding a large new area.
+                        </td>
+                        <td>
+                            100,000g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Open Dining Room </td>
+                        <td colspan="2">
+                            Removes the wall between the dining room and kitchen, adding 12 spaces.
+                        </td>
+                        <td>
+                            10,000g
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Buildings</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Barn</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Houses up to 4 cows.</li>
+                                <li>Size: 7x4</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>6,000g</li>
+                                <li>350 Wood</li>
+                                <li>150 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Barn</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Houses up to 8 cows and goats. Allows animals to give birth.</li>
+                                <li>Size: 7x4</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>12,000g</li>
+                                <li>450 Wood</li>
+                                <li>200 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe Barn</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Houses up to 12 cows, goats, sheep and pigs. Allows animals to give birth. Has an auto-feed system.</li>
+                                <li>Size: 7x4</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>25,000g</li>
+                                <li>550 Wood</li>
+                                <li>300 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coop</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Houses up to 4 chickens.</li>
+                                <li>Size: 6x3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>4,000g</li>
+                                <li>300 Wood</li>
+                                <li>100 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Coop</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Houses up to 8 chickens, ducks and dinosaurs. Has an incubator.</li>
+                                <li>Size: 6x3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>10,000g</li>
+                                <li>400 Wood</li>
+                                <li>150 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe Barn</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Houses up to 12 chickens, ducks, dinosaurs, rabbits and ostriches. Has an incubator. Has an auto-feed system.</li>
+                                <li>Size: 6x3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>25,000g</li>
+                                <li>550 Wood</li>
+                                <li>300 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fish Pond</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Raise fish and harvest their produce. Fish multiply over time.</li>
+                                <li>Size: 5x5</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>5,000g</li>
+                                <li>200 Stone</li>
+                                <li>5 Seaweed</li>
+                                <li>5 Green Algae</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mill</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Allows you to mill wheat, beets and rice.</li>
+                                <li>Size: 4x2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>5,000g</li>
+                                <li>150 Wood</li>
+                                <li>50 Stone</li>
+                                <li>4 Cloth</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shed</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>An empty building. Fill it with whatever you like! The interior can be decorated.</li>
+                                <li>Size: 7x3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>15,000g</li>
+                                <li>300 Wood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Shed</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Doubles the size of the shed. The interior can be decorated. </li>
+                                <li>Size: 7x3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>20,000g</li>
+                                <li>550 Wood</li>
+                                <li>300 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Silo</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Allows you to cut and store grass for feed. </li>
+                                <li>Size: 3x3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>100g</li>
+                                <li>100 Stone</li>
+                                <li>10 Clay</li>
+                                <li>5 Copper Bar</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Slime Hutch</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Raise up to 20 slimes. Fill water troughs and slimes will create slime balls. </li>
+                                <li>Size: 7x4</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>10,000g</li>
+                                <li>500 Stone</li>
+                                <li>10 Refined Quartz</li>
+                                <li>1 Iridium Bar</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stable</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Allows you to keep and ride a horse. Horse included. </li>
+                                <li>Size: 4x2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>10,000g</li>
+                                <li>100 Hardwood</li>
+                                <li>5 Iron Bar</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Well</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Provides a place for you to refill your watering can. </li>
+                                <li>Size: 4x2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>1,000g</li>
+                                <li>75 Stone</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cabin</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>A home for a friend! Subsidized by the town agricultural fund.</li>
+                                <li>Size: 4x2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>100g</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Bin</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Items placed in it will be included in the nightly shipment. </li>
+                                <li>Size: 2x1</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>250g</li>
+                                <li>150 Wood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pet Bowl</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Provides a dedicated home for one pet (cat, dog or turtle).</li>
+                                <li>Size: 2x2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>5,000g</li>
+                                <li>25 Hardwood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
             <h3 id="wizard">Wizard's Tower</h3>
-        <h2 id="bundles">Community Centre Bundles</h2>
-        <h2 id="joja">JojaMart</h2>
+        </div>
+        <div>
+            <h2 id="community">Community Upgrades</h2>
+            <h3 id="bundles">Community Centre Bundles</h3>
+            <h3 id="joja">JojaMart</h3>
+            <h3 id="community-upgrades">Other Upgrades</h3>
+            These can be ordered by Robin.
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trailer/Community Upgrade</td>
+                        <td colspan="2">
+                            <p>A new house for Pam. The host player can order this from Robin.</p>
+                            <p>Requires a fully upgraded farmhouse, completed community centre/Joja warehouse</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>500,000g</li>
+                                <li>950 Wood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Town Shortcuts</td>
+                        <td colspan="2">
+                            <p>Shortcuts to navigate the town more quickly.</p>
+                            <p>Requires having completed the community centre/Joja warehouse</p>
+                            <p>Changes:</p>
+                            <p>
+                                From Cindersap Forest (next to Leah's cottage) to the Beach, an east/west path along the water passable on horseback. It is possible to take this path to the beach even at times that a festival is being set up in town, the only non-warping way to get there at those times.
+                            </p>
+                            <p>
+                                From the Mountains (southwest of the quarry bridge) to Town (north of JojaMart), a riverside path too narrow for a horse.
+                            </p>
+                            <p>
+                                From the Mountains (along the fence east of the Carpenter's Shop) to Town (north of JojaMart and across the river), a riverside path too narrow for a horse.
+                            </p>
+                            <p>
+                                From the Town (south of the museum) to the Beach (Between the Tide Pool trees), a narrow path hidden in foliage, impassable on horseback.
+                            </p>
+                            <p>
+                                From the Bus Stop (by the tunnel) to the Backwoods, a flight of steps passable on horseback.
+                            </p>
+                            <p>
+                                From the island in the Mountains to south of the Adventurer's Guild, a wood plank bridge too narrow for a horse.
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>300,000g</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <h2 id="crops">Crops</h2>
         <h2 id="forageables">Foraging</h2>
         <h2 id="fish">Fish</h2>
@@ -64,7 +574,7 @@
         <h2 id="artifacts">Artifacts</h2>
         <h2 id="notes">Secret Notes</h2>
         <div class="to-top">
-            <a href="#welcome" class="paper-btn margin">^</a>
+            <a href="#welcome" class="paper-btn margin">Back to top</a>
         </div>
     </main>
 
