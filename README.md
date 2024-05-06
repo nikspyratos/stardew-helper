@@ -6,5 +6,4 @@ Last Updated: TBD
 ## TODO
 
 - All the content
-- TOC with links on page
-- Wiki links for everything
+- Wiki links or in-page linking for everything
