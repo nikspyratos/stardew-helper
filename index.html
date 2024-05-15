@@ -94,6 +94,7 @@
             <li><a href="#npcs">NPCs</a></li>
             <li><a href="#quests">Quests</a></li>
             <li><a href="#artifacts">Artifacts</a></li>
+            <li><a href="#trinkets">Trinkets</a></li>
             <li><a href="#notes">Secret Notes</a></li>
             <li><a href="#journal-scraps">Journal Scraps</a></li>
             <li><a href="#festivals">Festivals</a></li>
@@ -101,14 +102,681 @@
 
         <div>
             <h2 id="skills">Skills</h2>
+            <p>Each increase in skill (even beyond level 10 it decreases energy requirements by 0.1 points for the pickaxe, axe, hoe, watering can, and fishing rod.</p>
+            <p>The Statue Of Uncertainty in The Sewers allows the player to change professions. After donating Gold.png10,000g, the statue requires the player to choose one skill to change. That night after the player goes to bed, the Level 5 "Choose a profession" screen will appear, followed by the corresponding Level 10 "Choose a profession" screen for the skill selected at the statue.</p>
             <h3 id="farming">Farming</h3>
+            <p>Levels are gained by harvesting crops and caring for animals. Each level grants +1 hoe and watering can proficiency.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="1">Level</th>
+                        <th colspan="2">Rewards (recipes or profession)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Scarecrow</li>
+                                <li>Basic fertilizer</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Mayonnaise machine</li>
+                                <li>Stone fence</li>
+                                <li>Sprinkler</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Bee house</li>
+                                <li>Speed-gro</li>
+                                <li>Farmer's lunch</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Preserves Jar</li>
+                                <li>Basic retaining soil</li>
+                                <li>Iron fence</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">
+                            <ul>
+                                <li><b>Rancher:</b> Animal products worth 20% more.</li>
+                                <li><b>Tiller:</b> Crops worth 10% more.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Cheese press</li>
+                                <li>Hardwood fence</li>
+                                <li>Quality sprinkler</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Loom</li>
+                                <li>Quality retaining soil</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Oil maker</li>
+                                <li>Keg</li>
+                                <li>Deluxe speed-gro</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Seed maker</li>
+                                <li>Iridium Sprinkler</li>
+                                <li>Quality fertilizer</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td colspan="2">
+                            <p>
+                                Rancher:
+                                <ul>
+                                    <li><b>Coopmaster:</b> Befriend coop animals quicker. Incubation time (for Incubator and Ostrich Incubator) cut in half. Also improves coop product quality.</li>
+                                    <li><b>Shepherd:</b> Befriend barn animals quicker. Sheep produce wool faster. Also improves barn product quality.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Tiller:
+                                <ul>
+                                    <li><b>Artisan:</b> Artisan goods (wine, cheese, etc.) worth 40% more. Note that oil does not actually benefit from the Artisan Profession.</li>
+                                    <li><b>Agriculturist:</b> All crops grow 10% faster.</li>
+                                </ul>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <h3 id="mining">Mining</h3>
+            <p>Mining skill is increased by breaking rocks. Each level adds +1 to Pickaxe proficiency. Mining skill points are awarded when rocks are destroyed -- it doesn't matter if this is done by Pickaxe, Bombs, or by the action of Monsters.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="1">Level</th>
+                        <th colspan="2">Rewards (recipes or profession)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Cherry bomb</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Staircase</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Miner's treat</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Glowstone ring</li>
+                                <li>Transmute (Fe)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">
+                            <ul>
+                                <li><b>Miner:</b> +1 ore per vein.</li>
+                                <li><b>Tiller:</b> Chance for gems to appear in pairs. (50% chance per mining node. Also applies to geodes spawned from breaking rocks.)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Bomb</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Transmute (Au)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Mega bomb</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Crystalarium</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td colspan="2">
+                            <p>
+                                Miner:
+                                <ul>
+                                    <li><b>Blacksmith:</b> Metal bars (Copper, Iron, Gold, Iridium, Radioactive) worth 50% more.</li>
+                                        <li><b>Prospector:</b> Chance to find coal doubled.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Geologist:
+                                <ul>
+                                    <li><b>Excavator:</b> Chance to find geodes (normal, frozen, magma, omni) doubled.</li>
+                                    <li><b>Gemologist:</b> Minerals & gems worth 30% more.</li>
+                                </ul>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <h3 id="foraging">Foraging</h3>
+            <p>Foraging skill is increased both by gathering forage items found on the ground throughout Stardew Valley and by chopping down Trees with an Axe. Each foraging skill level adds +1 axe proficiency.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="1">Level</th>
+                        <th colspan="2">Rewards (recipes or profession)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Wild seeds (Spring)</li>
+                                <li>Field snack</li>
+                                <li>Trees sometimes drop seeds</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Charcoal kiln</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Cookout kit</li>
+                                <li>Moss soup</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Wild seeds (Summer)</li>
+                                <li>Tapper</li>
+                                <li>Mushroom log</li>
+                                <li>+1 Wild berry harvesting</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">
+                            <ul>
+                                <li><b>Forester:</b> Trees, stumps and logs drop 25% more wood.</li>
+                                <li><b>Gatherer:</b> 20% Chance for double harvest of foraged items.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Lightning rod</li>
+                                <li>Wild seeds (Fall)</li>
+                                <li>Warp totem: beach</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Wild seeds (Winter)</li>
+                                <li>Warp totem: mountain</li>
+                                <li>Tree fertilizer</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Survival burger</li>
+                                <li>Warp totem: farm</li>
+                                <li>Tent kit</li>
+                                <li>+1 Wild berry harvesting</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Rain totem</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td colspan="2">
+                            <p>
+                                Forester:
+                                <ul>
+                                    <li><b>Lumberjack:</b> All trees have a chance to drop hardwood.</li>
+                                    <li><b>Tapper:</b> Syrups worth 25% more.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Gatherer:
+                                <ul>
+                                    <li><b>Botanist:</b> Foraged items are always highest quality.</li>
+                                    <li><b>Tracker:</b> Location of forageable items revealed.</li>
+                                </ul>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <h3 id="fishing">Fishing</h3>
+            <p>Fishing Skill is increased by catching Fish, Trash, Seaweed, Green Algae, or White Algae with a Fishing Rod/Pole or by harvesting Crab Pots.</p>
+            <p>Each level grants +1 Fishing Rod Proficiency, increases the minimum fish size (in/cm) and bobber bar height, and decreases the max amount of time before fish bite. Fishing skill also increases the chance to find quality (silver or gold star) fish.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="1">Level</th>
+                        <th colspan="2">Rewards (recipes or profession)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Casting distance increased by one tile </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Bait</li>
+                                <li>Fiberglass Rod & Bait unlocked in Willy's Fish Shop</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Crap pot</li>
+                                <li>Dish O' The Sea</li>
+                                <li>Crab Pot unlocked in Willy's Fish Shop</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Deluxe Bait</li>
+                                <li>Worm Bin</li>
+                                <li>Recycling Machine</li>
+                                <li>Deluxe Bait unlocked in Willy's Fish Shop</li>
+                                <li>Casting distance increased by one tile</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">
+                            <ul>
+                                <li><b>Fisher:</b> Fish worth 25% more.</li>
+                                <li><b>Trapper:</b> Resources required to craft crab pots reduced.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Bait maker</li>
+                                <li>Spinner</li>
+                                <li>Trap bobber</li>
+                                <li>Sonar bobber</li>
+                                <li>Iridium Rod, Sonar Bobber, Lead Bobber, Spinner, & Trap Bobber unlocked in Willy's Fish Shop</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Cork Bobber</li>
+                                <li>Treasure Hunter</li>
+                                <li>Cork Bobber & Treasure Hunter unlocked in Willy's Fish Shop</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Deluxe Worm Bin</li>
+                                <li>Barbed Hook</li>
+                                <li>Dressed Spinner</li>
+                                <li>Barbed Hook & Dressed Spinner unlocked in Willy's Fish Shop</li>
+                                <li>Casting distance increased by one tile</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Seafoam Pudding</li>
+                                <li>Magnet</li>
+                                <li>Magnet unlocked in Willy's Fish Shop</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td colspan="2">
+                            <p>
+                                Fisher:
+                                <ul>
+                                    <li><b>Angler:</b> Fish worth 50% more.</li>
+                                    <li><b>Pirate:</b> Chance to find treasure doubled.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Trapper:
+                                <ul>
+                                    <li><b>Mariner:</b> Crab pots no longer produce junk items.</li>
+                                    <li><b>Luremaster:</b> Crab pots no longer require bait.</li>
+                                </ul>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <h3 id="combat">Combat</h3>
+            <p>Combat skill is increased by fighting monsters. Some levels add to the player's total HP (health points), as shown by an increase in the health meter.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="1">Level</th>
+                        <th colspan="2">Rewards (recipes or profession)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Sturdy Ring</li>
+                                <li>Bug Steak</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Life Elixir</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Roots Platter</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Warrior Ring</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">
+                            <ul>
+                                <li><b>Fighter:</b> All attacks deal 10% more damage. (+15 HP)</li>
+                                <li><b>Scout:</b> Critical strike chance increased by 50%.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Slime Egg-Press</li>
+                                <li>Oil of Garlic</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Ring of Yoba</li>
+                                <li>Thorns Ring</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Slime Incubator</li>
+                                <li>Explosive Ammo</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Iridium Band</li>
+                                <li>Squid Ink Ravioli</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td colspan="2">
+                            <p>
+                                Fighter:
+                                <ul>
+                                    <li><b>Brute:</b> Deal 15% more damage.</li>
+                                    <li><b>Defender:</b> +25 HP.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Scout:
+                                <ul>
+                                    <li><b>Acrobat:</b> Cooldown on special moves cut in half.</li>
+                                    <li><b>Desperado:</b> 2x Critical strike damage.</li>
+                                </ul>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <h3 id="mastery">Mastery</h3>
+            <p>Once the player has reached max level in all skills, they can open a door in Cindersap Forest to enter the Mastery Cave. Here, players can use extra experience to level up their mastery level. Farming experience points only contribute to mastery points at a 50% rate.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th colspan="2">Mastery points for this level</th>
+                        <th colspan="2">Cumulative mastery points for this level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2">10,000</td>
+                        <td colspan="2">10,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">15,000</td>
+                        <td colspan="2">25,000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">20,000</td>
+                        <td colspan="2">45,000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">25,000</td>
+                        <td colspan="2">70,000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">30,000</td>
+                        <td colspan="2">100,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The mastery levels can be used to master the five skills, unlocking different perks.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mastery skill</th>
+                        <th colspan="2">Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Farming</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Iridium Scythe: Can be used to harvest any crops. It's also excellent at gathering hay.</li>
+                                <li>Statue Of Blessings Recipe: Touching the statue gives a unique blessing every day.</li>
+                                <li>You can now find Golden Animal Crackers, which permanently doubles a farm animal's produce. Doesn't work on pigs.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mining</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Statue Of The Dwarf King Recipe: Choose from two mining-related powers each day.</li>
+                                <li>Heavy Furnace Recipe: It's more efficient than a regular furnace. Requires 25 pieces of ore and 3 coal per use.</li>
+                                <li>Gem-bearing rocks now grant twice the gems.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Foraging</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Mystic Tree Seed recipe: This can be planted to grow a special tree. The Mystic tree does not drop or spread seeds, but drops hardwood. It yields Mystic Syrup every 7 days.</li>
+                                <li>Treasure Totem recipe: Use on diggable terrain to summon a ring of treasure spots.</li>
+                                <li>You can now find Golden Mystery Boxes, which contain superior items. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fishing</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Advanced Iridium Rod: Use in the water to catch fish. Up to two bobbers can be attached at once.</li>
+                                <li>Challenge Bait recipe: A "perfect" catch yields triple the fish. However, each time a fish escapes the "fishing bar", the catch is reduced.</li>
+                                <li>You can now encounter Golden Fishing Treasure Chests.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Combat</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Anvil recipe: Allows you to re-forge trinkets, randomizing their stats. Costs 3 iridium bars per use.</li>
+                                <li>Mini-Forge recipe: Now, you can use a dwarvish forge from the convenience of your home.</li>
+                                <li>Unlocks a new equipment slot for trinkets. Trinkets can be found while adventuring and grant special powers after unlocking this mastery.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
         <div>
             <h2 id="buildings">Farm Buildings</h2>
             <h3 id="carpenter">Carpenter's Shop</h3>
@@ -981,6 +1649,72 @@
         <h2 id="npcs">NPCs</h2>
         <h2 id="quests">Quests</h2>
         <h2 id="artifacts">Artifacts</h2>
+        <div>
+            <h2 id="trinkets">Trinkets</h2>
+            <p>Most trinkets can be dropped by monsters, found in crates and barrels in the Mines, Skull Cavern, and Quarry Mine, or obtained in Skull Cavern treasure rooms. The Magic Hair Gel is the exception, as it can only be purchased from Alex's shop in the Desert Festival.</p>
+            <p>The player can obtain the same trinket multiple times. Trinkets do not stack. They can be sold at the Adventurer's Guild for 1,000g each.</p>
+            <p>All Trinkets, with the exceptions of the Basilisk Paw and the Magic Hair Gel, can be re-forged on an Anvil. This randomizes their stats and costs 3 Iridium Bars per re-roll.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Re-forged stat</th>
+                        <th>Max stat</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basilisk paw</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>Debuff immunity</td>
+                    </tr>
+                    <tr>
+                        <td>Fairy box</td>
+                        <td>Level</td>
+                        <td>5</td>
+                        <td>Summons a level X fairy companion that heals you in combat situations.</td>
+                    </tr>
+                    <tr>
+                        <td>Frog egg</td>
+                        <td>Color</td>
+                        <td>N/A</td>
+                        <td>Summons a hungry frog companion.</td>
+                    </tr>
+                    <tr>
+                        <td>Golden Spur</td>
+                        <td>Duration</td>
+                        <td>10 Seconds</td>
+                        <td>Critical strikes give you a speed boost for X seconds.</td>
+                    </tr>
+                    <tr>
+                        <td>Ice Rod</td>
+                        <td>Frequency; Duration</td>
+                        <td>3 Seconds (min); 4 Seconds</td>
+                        <td>Shoots an orb of ice every X seconds, freezing any enemies in its path for Y seconds.</td>
+                    </tr>
+                    <tr>
+                        <td>Magic Hair Gel</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>Your hair shimmers with all the colors of a prismatic shard.</td>
+                    </tr>
+                    <tr>
+                        <td>Magic Quiver</td>
+                        <td>Type: (None), Perfect, Rapid, Heavy</td>
+                        <td>Varies by Type</td>
+                        <td>Shoots a magic arrow at nearby enemies every X seconds, dealing Y-Z damage.</td>
+                    </tr>
+                    <tr>
+                        <td>Parrot Egg</td>
+                        <td>Level</td>
+                        <td>4</td>
+                        <td>Summons a level X parrot companion, who grants you a Y chance to find gold coins (worth 250g) when slaying monsters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div>
             <h2 id="notes">Secret Notes</h2>
             <p>Secret notes can be obtained randomly by clearing weeds, killing monsters, chopping trees, fishing, digging up artifacts, mining stone, resource clumps, or giant crops.</p>
